@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__content">
+        <div class="wrapper__header">
+          <div class="header__content">
+            <div class="burger__" onclick="toggleMenu()"></div>
+            <nav class="burger__menu">
+              <span class="toggle__theme">
+                <img src="/src/icons/burger-icons/moon.png" alt="" />
+              </span>
+              <li class="nav__items">
+                <span class="items__"
+                  ><img src="./src/icons/burger-icons/user__.png" alt="" /><a
+                    href=""
+                    class="profile__"
+                    >Profile</a
+                  ></span
+                >
+                <span class="items__"
+                  ><img src="./src/icons/burger-icons/heart.png" alt="" /><a
+                    href=""
+                    class="like__songs"
+                    >Liked Songs</a
+                  ></span
+                >
+                <span class="items__"
+                  ><img
+                    src="./src/icons/burger-icons/switch__lang.png"
+                    alt=""
+                  /><a href="" class="lang__">Language</a></span
+                >
+                <span class="items__"
+                  ><img
+                    src="./src/icons/burger-icons/contacts__.png"
+                    alt=""
+                  /><a href="" class="contact__">Contact with me</a></span
+                >
+                <span class="items__"
+                  ><img src="./src/icons/burger-icons/faq__.png" alt="" /><a
+                    href=""
+                    class="faq__"
+                    >FAQs</a
+                  ></span
+                >
+                <span class="items__"
+                  ><img
+                    src="./src/icons/burger-icons/settings__.png"
+                    alt=""
+                  /><a href="" class="settings__">Settings</a></span
+                >
+              </li>
+            </nav>
+            <nav class="search__input search__">
+              <span class="info__">
+                <img
+                  src="./src/icons/search/search__.png"
+                  alt="search"
+                  class="search__ico"
+                  onclick="showSearchBar()"
+                />
+                <input type="search" class="search__btn" />
+              </span>
+            </nav>
+          </div>
+        </div>
+        <div class="wrapper__body">
+          <div class="body__content">
+            <span class="recommended__">
+              <p>Recommended for you</p>
+            </span>
+            <div class="artist__container">
+              <div class="artists__box">
+                <div class="artists__template"></div>
+                <h1 class="artist__">Unknown Artist</h1>
+                <p class="artist__songs">unknown song</p>
+              </div>
+              <div class="artists__box">
+                <div class="artists__template"></div>
+                <h1 class="artist__">Unknown Artist</h1>
+                <p class="artist__songs">unknown song</p>
+              </div>
+              <div class="artists__box">
+                <div class="artists__template"></div>
+                <h1 class="artist__">Unknown Artist</h1>
+                <p class="artist__songs">unknown song</p>
+              </div>
+            </div>
+            <span class="my__playlist">
+              <p>Liked Songs</p>
+            </span>
+            <div class="liked__songs__container">
+              <div class="liked__songs__box">
+                <div class="liked__art__template"></div>
+                <h1 class="liked__artist__">Unknown Artist</h1>
+                <p class="liked__artist__songs">unknown song</p>
+              </div>
+              <div class="liked__songs__box">
+                <div class="liked__art__template"></div>
+                <h1 class="liked__artist__">Unknown Artist</h1>
+                <p class="liked__artist__songs">unknown song</p>
+              </div>
+              <div class="liked__songs__box">
+                <div class="liked__art__template"></div>
+                <h1 class="liked__artist__">Unknown Artist</h1>
+                <p class="liked__artist__songs">unknown song</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="music__player">
+          <div class="player__content">
+            <div class="current__pos"></div>
+            <div class="current__artist">
+              <div class="cur__art__template"></div>
+              <div class="artist__describe">
+                <h1 class="art__name">Unknown Artist</h1>
+                <p class="current__song">Unknown Song</p>
+              </div>
+            </div>
+            <nav class="nav__content">
+              <span class="previous__btn"
+                ><img src="./src/icons/nav-player/next.png" alt=""
+              /></span>
+              <span class="play__btn"
+                ><img
+                  class="play__"
+                  src="./src/icons/nav-player/play-button.png"
+              /></span>
+              <span class="next__btn"
+                ><img src="./src/icons/nav-player/next.png" alt=""
+              /></span>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>

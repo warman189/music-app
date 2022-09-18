@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/fonts/Gilroy-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a,
+li,
+p,
+h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+}
+.wrapper .wrapper__content {
+  background: #f7faff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 375px;
+  min-height: 812px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+  -moz-box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+}
+.wrapper .wrapper__content .wrapper__header {
+  order: 0;
+}
+.wrapper .wrapper__content .wrapper__header .header__content {
+  display: flex;
+  position: relative;
+  min-width: 100%;
+  min-height: 70px;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__,
+.wrapper .wrapper__content .wrapper__header .header__content .burger__::before,
+.wrapper .wrapper__content .wrapper__header .header__content .burger__::after {
+  border-radius: 4px;
+  height: 4px;
+  width: 28px;
+  background: rgb(0, 0, 0);
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__light {
+  background: #EAF0FF;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__ {
+  cursor: pointer;
+  position: absolute;
+  top: 45px;
+  left: 42px;
+  transition: all 0.3s ease-in;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__::before {
+  position: absolute;
+  top: -8px;
+  content: " ";
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__::after {
+  position: absolute;
+  top: 8px;
+  content: " ";
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__toggle::before {
+  transform: rotate(45deg) translateY(11px);
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__toggle::after {
+  transform: rotate(-45deg) translateY(-11px);
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__toggle {
+  width: 0;
+  z-index: 2;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  width: 265px;
+  min-height: 812px;
+  z-index: 1;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .toggle__theme {
+  cursor: pointer;
+  position: absolute;
+  right: 5vh;
+  top: 5vh;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .toggle__theme img {
+  height: 24px;
+  width: 24px;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .nav__items {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  min-width: 158px;
+  top: 15vh;
+  left: 67px;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .nav__items .items__ {
+  margin: 30px 0 0 0;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .nav__items .items__ a {
+  font-size: 20px;
+  line-height: 24px;
+  color: #091227;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .nav__items .items__ img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__menu .nav__items .close__menu {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: -30px;
+  cursor: pointer;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .menu__show {
+  display: block;
+  position: absolute;
+  transition: all 0.3s ease-in;
+  background: rgb(255, 255, 255);
+}
+.wrapper .wrapper__content .wrapper__header .header__content .menu__dark {
+  background: #091227;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .menu__dark .nav__items .items__ a {
+  color: #DFE8FF;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .search__input {
+  position: absolute;
+  right: 42px;
+  top: 35px;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .search__input .info__ {
+  display: flex;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .search__input .info__ .search__btn {
+  display: none;
+  border-radius: 15px;
+  border-width: 1px;
+  text-align: center;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .search__input .info__ .show__ {
+  display: block;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .search__input .info__ .search__ico {
+  cursor: pointer;
+}
+.wrapper .wrapper__content .wrapper__body {
+  order: 1;
+  flex: 1 0 auto;
+}
+.wrapper .wrapper__content .wrapper__body .body__content {
+  display: flex;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  top: 3vh;
+}
+.wrapper .wrapper__content .wrapper__body .body__content .recommended__ {
+  position: absolute;
+  left: 4vh;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.wrapper .wrapper__content .wrapper__body .body__content .my__playlist {
+  position: absolute;
+  left: 4vh;
+  top: 45vh;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.wrapper .wrapper__content .wrapper__body .body__content .artist__container {
+  display: -webkit-inline-box;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 250px;
+  top: 7vh;
+  overflow: auto;
+}
+.wrapper .wrapper__content .wrapper__body .body__content .artist__container .artists__box {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 242.39px;
+  margin: 0 0 0 28px;
+  text-align: center;
+}
+.wrapper .wrapper__content .wrapper__body .body__content .artist__container .artists__box .artists__template {
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  width: 190px;
+  height: 190px;
+  background: #825252;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.wrapper .wrapper__content .wrapper__body .body__content .artist__container .artists__box h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+.wrapper .wrapper__content .wrapper__body .body__content .artist__container .artists__box p {
+  color: #8996b8;
+  font-weight: 400;
+  font-size: 10px;
+}
+.wrapper .wrapper__content .wrapper__body .liked__songs__container {
+  display: -webkit-inline-box;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 250px;
+  top: 52vh;
+  overflow: auto;
+}
+.wrapper .wrapper__content .wrapper__body .liked__songs__container .liked__songs__box {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 242.39px;
+  margin: 0 0 0 28px;
+  text-align: center;
+}
+.wrapper .wrapper__content .wrapper__body .liked__songs__container .liked__songs__box .liked__art__template {
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  width: 190px;
+  height: 190px;
+  background: #825252;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.wrapper .wrapper__content .wrapper__body .liked__songs__container .liked__songs__box h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+.wrapper .wrapper__content .wrapper__body .liked__songs__container .liked__songs__box p {
+  color: #8996b8;
+  font-weight: 400;
+  font-size: 10px;
+}
+.wrapper .wrapper__content .music__player {
+  order: 2;
+  flex: 0 0 auto;
+}
+.wrapper .wrapper__content .music__player .player__content {
+  display: flex;
+  margin: auto;
+  position: relative;
+  height: 75px;
+  width: 100%;
+}
+.wrapper .wrapper__content .music__player .player__content .current__pos {
+  border-top: 4.00526px solid #cacaca;
+  width: 100%;
+}
+.wrapper .wrapper__content .music__player .player__content .current__artist {
+  position: absolute;
+  display: flex;
+  top: 4px;
+}
+.wrapper .wrapper__content .music__player .player__content .current__artist .cur__art__template {
+  background: #825252;
+  height: 66px;
+  width: 66px;
+}
+.wrapper .wrapper__content .music__player .player__content .current__artist .artist__describe {
+  margin: 13px 0 0 13px;
+}
+.wrapper .wrapper__content .music__player .player__content .current__artist .artist__describe .art__name {
+  order: 0;
+  font-weight: 500;
+  font-size: 18.0236px;
+  line-height: 21px;
+}
+.wrapper .wrapper__content .music__player .player__content .current__artist .artist__describe .current__song {
+  color: #8996b8;
+  font-size: 10.0131px;
+  line-height: 12px;
+}
+.wrapper .wrapper__content .music__player .player__content .nav__content {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 20px;
+  right: 5px;
+  top: 3vh;
+}
+.wrapper .wrapper__content .music__player .player__content .nav__content span {
+  cursor: pointer;
+  margin: 0 15px 0 0;
+}
+.wrapper .wrapper__content .music__player .player__content .nav__content img {
+  align-items: baseline;
+  height: 20px;
+  width: 20px;
+}
+.wrapper .wrapper__content .music__player .player__content .nav__content .next__btn {
+  transform: rotate(180deg);
+}
+.wrapper .wrapper__content .music__player .player__content .nav__content .pause__ {
+  content: url(/src/icons/nav-player/pause.png);
+}
+.wrapper .content__ {
+  background: rgba(9, 18, 39, 0.6980392157);
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
