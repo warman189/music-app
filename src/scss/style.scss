@@ -53,12 +53,12 @@ h1 {
         .burger__::before,
         .burger__::after {
           border-radius: 4px;
-          height: 4px;
+          height: 2px;
           width: 28px;
           background: rgb(0, 0, 0);
         }
         .burger__light {
-          background: #EAF0FF;
+          background: #eaf0ff;
         }
         .burger__ {
           cursor: pointer;
@@ -89,7 +89,7 @@ h1 {
           width: 0;
           z-index: 2;
         }
-        
+
         .burger__menu {
           display: none;
           align-items: center;
@@ -149,16 +149,27 @@ h1 {
           transition: all 0.3s ease-in;
           background: rgb(255, 255, 255);
         }
-        // Dark theme ; 
+        // Dark theme ;
+
         .menu__dark {
           background: #091227;
-            .nav__items {
-              .items__ {
-                a {
-                  color: #DFE8FF;
-                }
+          .nav__items {
+            .items__ {
+              a {
+                color: #dfe8ff;
               }
             }
+          }
+        }
+        // burger dark mode;
+        .burger__dark {
+          background-color: white;
+        }
+        .burger__dark::before {
+          background-color: white;
+        }
+        .burger__dark::after {
+          background-color: white;
         }
 
         // Dark theme end;
@@ -185,7 +196,14 @@ h1 {
             }
           }
         }
+        .search__input__light {
+          cursor: pointer;
+          content: url("/src/icons/search/search__light.png");
+        }
       }
+    }
+    .wrapper__header__dark {
+      background: #091227;
     }
     // Body Content
 
@@ -238,7 +256,7 @@ h1 {
               margin-bottom: 2vh;
               width: 190px;
               height: 190px;
-              background: #825252;
+              background: #82525251;
               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             }
             h1 {
@@ -279,7 +297,7 @@ h1 {
             margin-bottom: 2vh;
             width: 190px;
             height: 190px;
-            background: #825252;
+            background: #82525247;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           }
           h1 {
@@ -295,6 +313,18 @@ h1 {
             font-size: 10px;
           }
         }
+      }
+    }
+    .wrapper__body__dark {
+      background: #091227;
+      p {
+        color: #eaf0ff;
+      }
+      .artist__ {
+        color: #eaf0ff;
+      }
+      .liked__artist__ {
+        color: #eaf0ff;
       }
     }
 
@@ -323,7 +353,7 @@ h1 {
           top: 4px;
 
           .cur__art__template {
-            background: #825252;
+            background: #82525258;
             height: 66px;
             width: 66px;
           }
@@ -367,6 +397,12 @@ h1 {
             content: url(/src/icons/nav-player/pause.png);
           }
         }
+      }
+    }
+    .music__player__dark {
+      background: #091227;
+      .art__name {
+        color: #eaf0ff;
       }
     }
   }

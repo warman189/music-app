@@ -50,12 +50,12 @@ h1 {
 .wrapper .wrapper__content .wrapper__header .header__content .burger__::before,
 .wrapper .wrapper__content .wrapper__header .header__content .burger__::after {
   border-radius: 4px;
-  height: 4px;
+  height: 2px;
   width: 28px;
   background: rgb(0, 0, 0);
 }
 .wrapper .wrapper__content .wrapper__header .header__content .burger__light {
-  background: #EAF0FF;
+  background: #eaf0ff;
 }
 .wrapper .wrapper__content .wrapper__header .header__content .burger__ {
   cursor: pointer;
@@ -142,7 +142,16 @@ h1 {
   background: #091227;
 }
 .wrapper .wrapper__content .wrapper__header .header__content .menu__dark .nav__items .items__ a {
-  color: #DFE8FF;
+  color: #dfe8ff;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__dark {
+  background-color: white;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__dark::before {
+  background-color: white;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .burger__dark::after {
+  background-color: white;
 }
 .wrapper .wrapper__content .wrapper__header .header__content .search__input {
   position: absolute;
@@ -163,6 +172,13 @@ h1 {
 }
 .wrapper .wrapper__content .wrapper__header .header__content .search__input .info__ .search__ico {
   cursor: pointer;
+}
+.wrapper .wrapper__content .wrapper__header .header__content .search__input__light {
+  cursor: pointer;
+  content: url("/src/icons/search/search__light.png");
+}
+.wrapper .wrapper__content .wrapper__header__dark {
+  background: #091227;
 }
 .wrapper .wrapper__content .wrapper__body {
   order: 1;
@@ -213,7 +229,7 @@ h1 {
   margin-bottom: 2vh;
   width: 190px;
   height: 190px;
-  background: #825252;
+  background: rgba(130, 82, 82, 0.3176470588);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .wrapper .wrapper__content .wrapper__body .body__content .artist__container .artists__box h1 {
@@ -250,7 +266,7 @@ h1 {
   margin-bottom: 2vh;
   width: 190px;
   height: 190px;
-  background: #825252;
+  background: rgba(130, 82, 82, 0.2784313725);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .wrapper .wrapper__content .wrapper__body .liked__songs__container .liked__songs__box h1 {
@@ -264,6 +280,18 @@ h1 {
   color: #8996b8;
   font-weight: 400;
   font-size: 10px;
+}
+.wrapper .wrapper__content .wrapper__body__dark {
+  background: #091227;
+}
+.wrapper .wrapper__content .wrapper__body__dark p {
+  color: #eaf0ff;
+}
+.wrapper .wrapper__content .wrapper__body__dark .artist__ {
+  color: #eaf0ff;
+}
+.wrapper .wrapper__content .wrapper__body__dark .liked__artist__ {
+  color: #eaf0ff;
 }
 .wrapper .wrapper__content .music__player {
   order: 2;
@@ -286,7 +314,7 @@ h1 {
   top: 4px;
 }
 .wrapper .wrapper__content .music__player .player__content .current__artist .cur__art__template {
-  background: #825252;
+  background: rgba(130, 82, 82, 0.3450980392);
   height: 66px;
   width: 66px;
 }
@@ -326,6 +354,12 @@ h1 {
 }
 .wrapper .wrapper__content .music__player .player__content .nav__content .pause__ {
   content: url(/src/icons/nav-player/pause.png);
+}
+.wrapper .wrapper__content .music__player__dark {
+  background: #091227;
+}
+.wrapper .wrapper__content .music__player__dark .art__name {
+  color: #eaf0ff;
 }
 .wrapper .content__ {
   background: rgba(9, 18, 39, 0.6980392157);

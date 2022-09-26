@@ -21,6 +21,7 @@ function toggleMenu() {
   }
 }
 function showSearchBar() {
+  searchBtn.classList.toggle("show__");
   inputFinder.classList.toggle("show__");
 }
 
@@ -44,7 +45,20 @@ playBtn.addEventListener("click", function playPause() {
 });
 
 toggleDark.addEventListener("click", (_) => {
-  
+  burgerBtn.classList.toggle("burger__dark");
   burgerNav.classList.toggle("menu__dark");
-  console.log("test");
+  console.log("changed!");
+  changedTheme();
 });
+
+let headerDrk = document.querySelector(".wrapper__header");
+let bodyDrk = document.querySelector(".wrapper__body");
+let searchBtn = document.querySelector(".search__input");
+
+function changedTheme() {
+  headerDrk.classList.toggle("wrapper__header__dark");
+  bodyDrk.classList.toggle("wrapper__body__dark");
+  searchBtn.classList.toggle("search__input__light");
+  musicBar.classList.toggle("music__player__dark");
+  console.log("funct test");
+}
