@@ -196,10 +196,6 @@ h1 {
             }
           }
         }
-        .search__input__light {
-          cursor: pointer;
-          content: url("/src/icons/search/search__light.png");
-        }
       }
     }
     .wrapper__header__dark {
@@ -392,9 +388,6 @@ h1 {
           }
           .next__btn {
             transform: rotate(180deg);
-          }
-          .pause__ {
-            content: url(/src/icons/nav-player/pause.png);
           }
         }
       }

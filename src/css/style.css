@@ -173,10 +173,6 @@ h1 {
 .wrapper .wrapper__content .wrapper__header .header__content .search__input .info__ .search__ico {
   cursor: pointer;
 }
-.wrapper .wrapper__content .wrapper__header .header__content .search__input__light {
-  cursor: pointer;
-  content: url("/src/icons/search/search__light.png");
-}
 .wrapper .wrapper__content .wrapper__header__dark {
   background: #091227;
 }
@@ -351,9 +347,6 @@ h1 {
 }
 .wrapper .wrapper__content .music__player .player__content .nav__content .next__btn {
   transform: rotate(180deg);
-}
-.wrapper .wrapper__content .music__player .player__content .nav__content .pause__ {
-  content: url(/src/icons/nav-player/pause.png);
 }
 .wrapper .wrapper__content .music__player__dark {
   background: #091227;

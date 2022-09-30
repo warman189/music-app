@@ -9,9 +9,6 @@ burgerBtn.addEventListener("click", (_) => {
   burgerNav.style.pointerEvents = "auto";
   burgerBtn.style.pointerEvents = "auto";
   mainContent.classList.toggle("content__");
-});
-
-function toggleMenu() {
   if (burgerBtn) {
     if (burgerBtn.classList.contains("burger__toggle")) {
       burgerBtn.classList.remove("burger__toggle");
@@ -19,11 +16,13 @@ function toggleMenu() {
       burgerBtn.classList.add("burger__toggle");
     }
   }
-}
-function showSearchBar() {
+});
+
+var searchToggle = document.querySelector(".search__ico");
+searchToggle.addEventListener("click", (_) => {
   searchBtn.classList.toggle("show__");
   inputFinder.classList.toggle("show__");
-}
+});
 
 // navigation buttons for player
 
@@ -32,23 +31,12 @@ const musicBar = document.querySelector(".music__player");
 const playBtn = document.querySelector(".play__btn");
 const toggleDark = document.querySelector(".toggle__theme");
 
-playBtn.addEventListener("click", function playPause() {
-  let audio = new Audio();
-  if (playBtn) {
-    playBtn.classList.toggle("pause__");
-    audio.play();
-    console.log("play");
-  } else if (playBtn) {
-    audio.pause();
-    console.log("pause");
-  }
-});
-
 toggleDark.addEventListener("click", (_) => {
   burgerBtn.classList.toggle("burger__dark");
   burgerNav.classList.toggle("menu__dark");
   console.log("changed!");
   changedTheme();
+  changeIcons();
 });
 
 let headerDrk = document.querySelector(".wrapper__header");
@@ -58,7 +46,12 @@ let searchBtn = document.querySelector(".search__input");
 function changedTheme() {
   headerDrk.classList.toggle("wrapper__header__dark");
   bodyDrk.classList.toggle("wrapper__body__dark");
-  searchBtn.classList.toggle("search__input__light");
   musicBar.classList.toggle("music__player__dark");
-  console.log("funct test");
+}
+
+function changeIcons() {
+  searchToggle.src = searchToggle.src.replace(
+    "/src/icons/search/search__.png",
+    "/src/icons/search/search__light.png"
+  );
 }
