@@ -50,8 +50,23 @@ function changedTheme() {
 }
 
 function changeIcons() {
+  const prevBtn = document.querySelector(".prev__btn");
+  const playBtn = document.querySelector(".play__");
+  const nextBtn = document.querySelector(".next__btn__ico");
   searchToggle.src = searchToggle.src.replace(
     "/src/icons/search/search__.png",
     "/src/icons/search/search__light.png"
+  );
+  prevBtn.src = prevBtn.src.replace(
+    "/src/icons/nav-player/next.png",
+    "/src/icons/nav-player/light/previous_light.png"
+  );
+  playBtn.src = playBtn.src.replace(
+    "/src/icons/nav-player/play-button.png",
+    "/src/icons/nav-player/light/play_light.png"
+  );
+  nextBtn.src = nextBtn.src.replace(
+    "/src/icons/nav-player/next.png",
+    "/src/icons/nav-player/light/previous_light.png" // reversed, idk why
   );
 }
