@@ -28,7 +28,6 @@ searchToggle.addEventListener("click", (_) => {
 
 const artistSong = document.querySelectorAll(".artists__box");
 const musicBar = document.querySelector(".music__player");
-const playBtn = document.querySelector(".play__btn");
 const toggleDark = document.querySelector(".toggle__theme");
 
 toggleDark.addEventListener("click", (_) => {
@@ -70,3 +69,25 @@ function changeIcons() {
     "/src/icons/nav-player/light/previous_light.png" // reversed, idk why
   );
 }
+
+// nav for buttons //
+
+const playerContent = document.querySelector(".current__audio");
+const prevBtn = document.querySelector(".prev__btn");
+const playBtn = document.querySelector(".play__btn");
+const nextBtn = document.querySelector(".next__btn__ico");
+let count = 0;
+
+function playPause() {
+  if (count == 0) {
+    count = 1;
+    playerContent.play();
+  } else {
+    count = 0;
+    playerContent.pause();
+  }
+}
+
+playBtn.onclick = function () {
+  playPause();
+};
