@@ -68,6 +68,10 @@ function changeIcons() {
     "/src/icons/nav-player/next.png",
     "/src/icons/nav-player/light/previous_light.png" // reversed, idk why
   );
+  playBtn.src = playBtn.src.replace(
+    "/src/icons/nav-player/pause.png",
+    "/src/icons/nav-player/light/pause_light.png"
+  );
 }
 
 // nav for buttons //
@@ -79,7 +83,7 @@ const nextBtn = document.querySelector(".next__btn__ico");
 let count = 0;
 
 function playPause() {
-  playBtn.classList.toggle("pause__btn");
+  playBtn.classList.toggle('pause__btn')
   if (count == 0) {
     count = 1;
     playerContent.play();
