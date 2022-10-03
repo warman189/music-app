@@ -79,6 +79,7 @@ const nextBtn = document.querySelector(".next__btn__ico");
 let count = 0;
 
 function playPause() {
+  playBtn.classList.toggle("pause__btn");
   if (count == 0) {
     count = 1;
     playerContent.play();

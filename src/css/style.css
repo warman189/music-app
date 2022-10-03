@@ -357,4 +357,8 @@ h1 {
 .wrapper .content__ {
   background: rgba(9, 18, 39, 0.6980392157);
   pointer-events: none;
+}
+
+.pause__btn {
+  content: url("/src/icons/nav-player/pause.png");
 }/*# sourceMappingURL=style.css.map */

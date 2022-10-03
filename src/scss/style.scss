@@ -406,3 +406,9 @@ h1 {
     pointer-events: none;
   }
 }
+
+// toggle items for player; 
+
+.pause__btn {
+  content: url('/src/icons/nav-player/pause.png')
+}
